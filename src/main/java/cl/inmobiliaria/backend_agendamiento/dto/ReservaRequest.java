@@ -5,11 +5,9 @@ import jakarta.validation.constraints.NotNull;
 import java.time.LocalDate;
 import java.time.LocalTime;
 
-// datos que envía el cliente (ya sea en react o postman) para poder agendar una visita
+// Datos que envía el cliente (ya sea React o Postman) para agendar una visita
+// El usuario ya no viaja en el cuerpo: se obtiene del token
 public record ReservaRequest(
-        @NotNull(message = "El usuario es obligatorio")
-        Long usuarioId,
-
         @NotNull(message = "La propiedad es obligatoria")
         Long propiedadId,
 
