@@ -1,0 +1,8 @@
+target/
+.mvn/timing.properties
+.git/
+.gitignore
+.idea/
+*.iml
+.vscode/
+.env
